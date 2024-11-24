@@ -1,0 +1,12 @@
+{
+  "cracker_box": {
+    "object_name": "obj_000002",
+    "dataset": "ycbv",
+    "unit": "mm"
+  },
+  "mustard": {
+    "object_name": "obj_000005",
+    "dataset": "ycbv",
+    "unit": "mm"
+  }
+}

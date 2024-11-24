@@ -1,0 +1,14 @@
+<launch>
+  <!-- Launch RealSense if you need -->
+  <include file="$(find realsense2_camera)/launch/rs_camera.launch" />
+  
+  <!-- Launch Image Resizer for 640x480 RGB images-->
+  <include file="$(find ros_imresize)/launch/imresize_fixed.launch" />
+
+  <!-- Launch Object Detector -->
+
+  <!--Remember to activate conda environment in the same terminal (conda activate happypose)-->
+  <node pkg="happypose_ros" name="HappyPoseService_node" type="HappyPoseService.py" />
+  
+</launch>
+

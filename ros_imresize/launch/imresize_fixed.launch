@@ -1,0 +1,11 @@
+<launch>
+
+  <param name="camera_info" value="/camera/color/camera_info" />
+  <param name="topic_crop" value="/camera/color/image_raw" />
+  <param name="resize_width" value="640" />
+  <param name="resize_height" value="480" />
+  <param name="resize_frequency" value="0.2" />  <!-- Hz, 0.2 Hz => 5sec period, original: 10 Hz-->
+  
+  <node name="ros_imresize_1" pkg="ros_imresize" type="ros_imresize" output="screen" />
+
+</launch>
